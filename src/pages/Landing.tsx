@@ -154,7 +154,10 @@ export default function Landing() {
             <p className="text-slate-600 text-lg">Tailored tuition programs designed for every stage of your child's educational journey.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <Card className="border-indigo-100 shadow-md hover:shadow-lg transition-shadow">
+            <Card className="border-indigo-100 shadow-md hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+              <div className="h-48 overflow-hidden">
+                <img src="/images/happy_student.png" alt="Primary Tuition" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
               <CardHeader className="bg-indigo-50/50 border-b border-indigo-50 pb-6">
                 <CardTitle className="text-2xl text-indigo-950">Primary Tuition</CardTitle>
                 <CardDescription className="text-base text-slate-600">Grade 1 to 6</CardDescription>
@@ -164,7 +167,10 @@ export default function Landing() {
               </CardContent>
             </Card>
             
-            <Card className="border-indigo-100 shadow-md hover:shadow-lg transition-shadow">
+            <Card className="border-indigo-100 shadow-md hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+              <div className="h-48 overflow-hidden">
+                <img src="/images/group_learning.png" alt="Junior School (CBC)" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
               <CardHeader className="bg-indigo-50/50 border-b border-indigo-50 pb-6">
                 <CardTitle className="text-2xl text-indigo-950">Junior School (CBC)</CardTitle>
                 <CardDescription className="text-base text-slate-600">Grade 7 to 9</CardDescription>
@@ -174,7 +180,10 @@ export default function Landing() {
               </CardContent>
             </Card>
 
-            <Card className="border-indigo-100 shadow-md hover:shadow-lg transition-shadow">
+            <Card className="border-indigo-100 shadow-md hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+              <div className="h-48 overflow-hidden">
+                <img src="/images/focused_studying.png" alt="Senior School" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
               <CardHeader className="bg-indigo-50/50 border-b border-indigo-50 pb-6">
                 <CardTitle className="text-2xl text-indigo-950">Senior School</CardTitle>
                 <CardDescription className="text-base text-slate-600">Form 1 to 4 / Year 10-13</CardDescription>
@@ -184,7 +193,10 @@ export default function Landing() {
               </CardContent>
             </Card>
 
-            <Card className="border-indigo-100 shadow-md hover:shadow-lg transition-shadow bg-amber-50/30">
+            <Card className="border-indigo-100 shadow-md hover:shadow-lg transition-shadow bg-amber-50/30 overflow-hidden flex flex-col">
+              <div className="h-48 overflow-hidden">
+                <img src="/images/holiday_remedial.png" alt="Holiday & Remedial" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
               <CardHeader className="bg-amber-100/50 border-b border-amber-100 pb-6">
                 <CardTitle className="text-2xl text-indigo-950">Holiday & Remedial</CardTitle>
                 <CardDescription className="text-base text-slate-600">Exam Prep & School-Holiday Tuition</CardDescription>
