@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Users, BookOpen, Clock, Phone, Mail, MessageCircle } from "lucide-react";
+import { MapPin, Users, BookOpen, Clock, Phone, MessageCircle } from "lucide-react";
 
 export default function Landing() {
   const fadeInUp = {

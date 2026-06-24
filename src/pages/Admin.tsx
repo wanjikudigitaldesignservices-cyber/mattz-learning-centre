@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { createClient, Session } from "@supabase/supabase-js";
+import { createClient, type Session } from "@supabase/supabase-js";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
@@ -138,11 +138,11 @@ export default function Admin() {
             {authError && <div className="text-red-500 text-sm bg-red-50 p-2 rounded">{authError}</div>}
             <div>
               <label className="block text-sm font-medium mb-1">Email</label>
-              <Input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+              <Input type="email" value={email} onChange={(e: any) => setEmail(e.target.value)} required />
             </div>
             <div>
               <label className="block text-sm font-medium mb-1">Password</label>
-              <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+              <Input type="password" value={password} onChange={(e: any) => setPassword(e.target.value)} required />
             </div>
             <Button type="submit" className="w-full bg-indigo-900 hover:bg-indigo-800">Sign In</Button>
           </form>
@@ -220,7 +220,7 @@ export default function Admin() {
                         {enq.message || "-"}
                       </TableCell>
                       <TableCell>
-                        <Select value={enq.status} onValueChange={(val) => updateStatus(enq.id, val)}>
+                        <Select value={enq.status} onValueChange={(val: string) => updateStatus(enq.id, val)}>
                           <SelectTrigger className="w-[130px] h-8 text-xs">
                             <SelectValue />
                           </SelectTrigger>

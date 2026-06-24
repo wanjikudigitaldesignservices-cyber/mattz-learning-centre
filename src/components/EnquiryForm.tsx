@@ -89,7 +89,7 @@ export function EnquiryForm() {
           <FormField
             control={form.control}
             name="parent_name"
-            render={({ field }) => (
+            render={({ field }: { field: any }) => (
               <FormItem>
                 <FormLabel>Parent/Guardian Name *</FormLabel>
                 <FormControl>
@@ -102,7 +102,7 @@ export function EnquiryForm() {
           <FormField
             control={form.control}
             name="phone"
-            render={({ field }) => (
+            render={({ field }: { field: any }) => (
               <FormItem>
                 <FormLabel>Phone Number *</FormLabel>
                 <FormControl>
@@ -132,7 +132,7 @@ export function EnquiryForm() {
           <FormField
             control={form.control}
             name="child_grade"
-            render={({ field }) => (
+            render={({ field }: { field: any }) => (
               <FormItem>
                 <FormLabel>Child's Grade *</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
@@ -162,7 +162,7 @@ export function EnquiryForm() {
           <FormField
             control={form.control}
             name="program"
-            render={({ field }) => (
+            render={({ field }: { field: any }) => (
               <FormItem>
                 <FormLabel>Program of Interest *</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
