@@ -117,7 +117,7 @@ export function EnquiryForm() {
         <FormField
           control={form.control}
           name="email"
-          render={({ field }) => (
+          render={({ field }: { field: any }) => (
             <FormItem>
               <FormLabel>Email Address (Optional)</FormLabel>
               <FormControl>
@@ -188,7 +188,7 @@ export function EnquiryForm() {
         <FormField
           control={form.control}
           name="message"
-          render={({ field }) => (
+          render={({ field }: { field: any }) => (
             <FormItem>
               <FormLabel>Any specific needs or questions?</FormLabel>
               <FormControl>
